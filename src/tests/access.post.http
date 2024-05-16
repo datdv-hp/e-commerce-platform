@@ -1,0 +1,37 @@
+@url_dev=http://localhost:3052/api/v1
+@access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjQwMzQxYmJiM2M2MGVjOTU3NmU4MjEiLCJlbWFpbCI6InNob3B0aXBqczE0QGdtYWlsLmNvbSIsImlhdCI6MTcxNTUyODk2MSwiZXhwIjoxNzE1NTI4OTYxfQ.3rSSsPLpHXBHiXhjp4DWoo3HsjQf2O12BWX0rI5Ywzw
+
+### Signup
+POST {{url_dev}}/access/signup
+Content-Type: application/json
+x-api-key: cd1c42f1ea9e5b45
+
+{
+    "name": "Shop TIPS",
+    "email": "shoptipjs14@gmail.com",
+    "password": "abc1234"
+}
+
+### Login
+POST {{url_dev}}/access/login
+Content-Type: application/json
+x-api-key: cd1c42f1ea9e5b45
+
+{
+    "email": "shoptipjs14@gmail.com",
+    "password": "abc1234"
+}
+
+### Logout
+POST {{url_dev}}/access/logout
+Content-Type: application/json
+x-api-key: cd1c42f1ea9e5b45
+x-client-id: 6640341bbb3c60ec9576e821
+Authorization: Bearer {{access_token}}
+
+### Refresh token
+POST {{url_dev}}/access/token
+Content-Type: application/json
+x-api-key: cd1c42f1ea9e5b45
+x-client-id: 6640341bbb3c60ec9576e821
+Authorization: Bearer {{access_token}}

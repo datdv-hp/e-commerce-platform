@@ -1,0 +1,10 @@
+@url_dev=http://localhost:3052/api/v1
+@access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjQwMzQxYmJiM2M2MGVjOTU3NmU4MjEiLCJlbWFpbCI6InNob3B0aXBqczE0QGdtYWlsLmNvbSIsImlhdCI6MTcxNTUyODM1NCwiZXhwIjoxNzE1NzAxMTU0fQ.C3e1FmR62C-VSfsFkFuSSzL-zy-K90mJGJ8pCFoEQbE
+
+### Get all
+GET {{url_dev}}/shop?limit=10&page=1
+Content-Type: application/json
+x-api-key: cd1c42f1ea9e5b45
+x-client-id: 6640341bbb3c60ec9576e821
+Content-Type: application/json
+Authorization: Bearer {{access_token}}
